@@ -9,6 +9,9 @@
         https://designmanifestos.org/wp-content/uploads/2020/04/essays-10things-8400.pdf
 
         It's meant to be shaped like a bottle of poison, the 'avoid them' being an x around the toxic stuff
+
+        new update: when you mouse over the green letters, it turns the whole row into the word toxic until you mouse off. doesn't work on a phone since you dont really have a mouse to mouse over with
+
     -->  
 
     <style type="text/css">
@@ -53,11 +56,11 @@
     <p>ARE</p> 
 
 
-    <p id="test" onmouseenter="line1()" onmouseleave="line1out()" style="color:palegreen; font-family:'Brush Script MT', cursive;">T T T T T </p>
-    <p style="color:palegreen; font-family:'Brush Script MT', cursive;">O O O O O O O</p>
-    <p style="color:palegreen; font-family:'Brush Script MT', cursive;">X X X X X X X X X</p>
-    <p style="color:palegreen; font-family:'Brush Script MT', cursive;">I I I I I I I I I I</p>
-    <p style="color:palegreen; font-family:'Brush Script MT', cursive;">C C C C C</p>
+    <p id="t" onmouseenter="line1()" onmouseleave="line1out()" style="color:palegreen; font-family:'Brush Script MT', cursive;">T T T T T </p>
+    <p id="o" onmouseenter="line2()" onmouseleave="line2out()" style="color:palegreen; font-family:'Brush Script MT', cursive;">O O O O O O O</p>
+    <p id = "x" onmouseenter="line3()" onmouseleave="line3out()" style="color:palegreen; font-family:'Brush Script MT', cursive;">X X X X X X X X X</p>
+    <p id = "i" onmouseenter="line4()" onmouseleave="line4out()" style="color:palegreen; font-family:'Brush Script MT', cursive;">I I I I I I I I I I</p>
+    <p id = "c" onmouseenter="line5()" onmouseleave="line5out()" style="color:palegreen; font-family:'Brush Script MT', cursive;">C C C C C</p>
 
 <div>
     <p style="letter-spacing:110px;color:red;">AVOID</p>
@@ -73,11 +76,45 @@
 
 <script>
 function line1() {
-  document.getElementById("test").innerHTML = "T O X I c";
+  document.getElementById("t").innerHTML = "T O X I c";
 }
 
 function line1out() {
-  document.getElementById("test").innerHTML = "T T T T T";
+  document.getElementById("t").innerHTML = "T T T T T";
+}
+
+
+function line2() {
+  document.getElementById("o").innerHTML = "T O X I C";
+}
+
+function line2out() {
+  document.getElementById("o").innerHTML ="O O O O O O O";
+}
+
+
+function line3() {
+  document.getElementById("x").innerHTML = "T O X I C";
+}
+
+function line3out() {
+  document.getElementById("x").innerHTML = "X X X X X X X X X";
+}
+
+function line4() {
+  document.getElementById("i").innerHTML = "T O X I C";
+}
+
+function line4out() {
+  document.getElementById("c").innerHTML = "I I I I I I I I I I";
+}
+
+function line5() {
+  document.getElementById("c").innerHTML = "T O X I C";
+}
+
+function line5out() {
+  document.getElementById("x").innerHTML = "C C C C C";
 }
 
 </script>

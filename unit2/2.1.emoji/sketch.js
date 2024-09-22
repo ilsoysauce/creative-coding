@@ -18,7 +18,7 @@ function draw() {
   
   circle(200,200,250) // the yellow emoji circle
 
-fill(102,69,0); // color of mouth
+fill(102,69,0); // color of the mouth
 stroke(102,69,0)
 strokeWeight(4);
 ellipse(200, 250, 120, 70) //bottom part of mouth (x, y, long, height)

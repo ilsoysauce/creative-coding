@@ -19,7 +19,7 @@ rect(55, 72, 500, 500);
 
 //black rectangles
 fill(53,53,53); 
-stroke(0) //to give them a litlt more depth
+stroke(0) //to give them a little more depth
 strokeWeight(1);
 
 

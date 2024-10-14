@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="utf-8">
 
     <title>Pixel Sorting</title> 
@@ -20,12 +21,58 @@
             display:block;
             margin: 0 auto;
         }
+
+div1
+{
+    visibility:hidden;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
     </style>
+
+
 
 </head>
 <body>
-   
 
-   
+      <button style="display:block; margin:auto; width:200px; height:200px; " onclick="function1()">CLICK TO PIXEL SORT</button>
+<div id="original">
+   <img src="nico.jpg" alt="nico rio" style="width:600px;height:350px;"class="center"/>
+   <p class="center">Nico from the movie Rio</p>
+   <img src="test.png" alt="art of two characters"class="center"/>
+   <p class="center">A friend's art of two characters</p>
+   <img src="welct.png" alt="welcome to toontown"class="center"/>
+   <p class="center">My character welcoming everyone to Toontown</p>
+   <img src="wallpaper.jpg" alt="clouds" style="width:600px; height:350px;"class="center"/>
+   <p class="center">A wallpaper I saved several years ago that I don't know the origin of</p>
+   <img src="creature.png" alt="alien"style="width:550px; height:600px;"class="center"/>
+   <p class="center">My alien character</p>
+</div>
+
+<div1 id="unoriginal">
+   <img src="cayoot.png" alt="nico rio" style="width:600px; height:350px;"class="center"/>
+   <p class="center">Nico from the movie Rio gets obliterated</p>
+   <img src="kaboom.png" alt="art of two characters"class="center"/>
+   <p class="center">A friend's art of two characters but reality has been distorted</p>
+   <img src="toontown.png" alt="welcome to toontown"class="center"/>
+    <p class="center">My character welcoming everyone to Toontown?</p>
+   <img src="prtty.png" alt="clouds"style="width=600px; height:350px;"class="center"/>
+      <p class="center">A wallpaper I saved several years ago that I don't know the origin of gets ruined</p>
+   <img src="terrifying.png" alt="alien" style="width:550px; height:600px;"class="center"/>
+     <p class="center">My alien character becomes TERRIFYING</p>
+</div1>
+
+<script>
+function function1() {
+    document.getElementById("original").innerHTML = document.getElementById("unoriginal").innerHTML;
+
+}
+</script>   
 </body>
 </html> 

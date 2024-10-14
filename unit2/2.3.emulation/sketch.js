@@ -2,6 +2,7 @@
 
 function setup() {
   // create the canvas
+  
   createCanvas(600, 800);
   
   // disable animation
@@ -15,12 +16,12 @@ function draw() {
   fill(199, 204, 205);
   stroke(198,198,196);
   strokeWeight(5);
-rect(55, 72, 500, 500);
+rect(55, 72, 500, 380);
+
 
 //black rectangles
 fill(53,53,53); 
-stroke(0) //to give them a little more depth
-strokeWeight(1);
+noStroke();
 
 
 translate(100,100); //moving the starting position away from behind the border
@@ -35,13 +36,20 @@ push(); //i forgot to put push and pop at first and it was making everything loo
 // let xspace=x*(width+5);  later realized this was making space left/right between rectangles, but in the original composition there is no space there
   // let yspace=y*(width+5); five was too much and it made all the rectangles look the same, eventually abandoned this idea because the top rows weren't moving as much as the bottom rows
 
-translate(x*30, y*30); //moves the rectangles to the next spot in the grid
+translate(x*30, y*22); //moves the rectangles to the next spot in the grid (update: lowered the y*30 to y*22 to put the squares closer together)
 
 
-  rect(0,random(5,20,15), 30, 20) //the rectangles. the random value was originally random(10) but i wanted the spaces to be a little more consistent, ended up going between different values to see which ones i liked more
+  rect(0,random(10), 30, 20) //the rectangles. the random value was originally random(10) but i wanted the spaces to be a little more consistent, ended up going between different values to see which ones i liked more
   pop();
 }
 }
 
 
+
 }
+
+
+
+
+
+

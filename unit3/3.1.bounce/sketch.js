@@ -10,6 +10,7 @@ let y = 0;
 let xspeed = 2;
 let yspeed = 3; //making the speeds different makes it so it bounces outside of the two corners
 
+//i added a ball that starts in every corner
 let x2 = 400;
 let y2 = 0;
 let x2speed = 2;
@@ -42,6 +43,7 @@ if(y<0 | y>height)
 }
 
 
+// same code but for balls 2, 3, and 4
 if(x2<0 | x2>width)
 {
   x2speed=x2speed*-1;
@@ -81,6 +83,8 @@ if(y4<0 | y4>height)
 x = x+xspeed; //iterate x
 y = y+yspeed; //iterate y
 
+
+//same code but with balls 2, 3, and 4
 x2 = x2+x2speed;
 y2 = y2+y2speed;
 
@@ -93,6 +97,8 @@ y4 = y4+y4speed;
 
 //draw a circle
 circle(x,y,50);
+
+//same code but with balls 2, 3, and 4
 circle(x2, y2, 50);
 circle(x3, y3, 50);
 circle(x4, y4, 50);

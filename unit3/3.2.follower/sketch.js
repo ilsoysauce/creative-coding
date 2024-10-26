@@ -5,7 +5,7 @@ let yspeed = speedfactor;
 let x = 0; 
 let y = 0;
 let points = 0;
-let debug=true;
+let debug=false;
 
 
 let squarex=400;

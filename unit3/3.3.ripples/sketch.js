@@ -16,7 +16,7 @@ draw()
   this.diameter +=1;
   //adjusting the color of the ripples
   noFill();
-  stroke("white");
+  stroke(255, 255, 255, 50);
   strokeWeight(3);
   circle(this.x, this.y, this.diameter);
 

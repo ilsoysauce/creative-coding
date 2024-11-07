@@ -77,8 +77,7 @@ words.push('class');
 
 if(hour()===10)
 {
-  if(mm==0)
-  {
+  
     if(currentSecond != second())
 {
   currentSecond=second();
@@ -89,12 +88,15 @@ if(hour()===10)
   }
 }
 mm = floor(millis()-milliFreeze);
+if (mm==0)
+{
   words.push('schoolwork');
 }
 }
+
 if(hour()===11 || hour()===12 || hour()===13)
 {
-  if(mm==0){
+  
     if(currentSecond != second())
 {
   currentSecond=second();
@@ -105,9 +107,12 @@ if(hour()===11 || hour()===12 || hour()===13)
   }
 }
 mm = floor(millis()-milliFreeze);
+if(mm==0)
+{
   words.push('class');
 }
 }
+
 
 if(hour()===14)
 {

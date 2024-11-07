@@ -219,8 +219,8 @@ if (hour()===0 || hour()===1 || hour()===2 || hour()===3 || hour()===4 || hour()
 // }
 
 //makes the lines where the text goes so that it can go on new lines when the text reaches the edge
-x=20;
-y=20;
+x=20; //starting positions
+y=40;
 let rollover='';
 for (let w = 0; w < words.length; w++)
  { 

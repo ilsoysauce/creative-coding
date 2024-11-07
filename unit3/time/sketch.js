@@ -69,7 +69,7 @@ if(currentSecond != second())
 }
 mm = floor(millis()-milliFreeze);
 
-  if(mm=0)
+  if(mm==0)
   {
 words.push('class');
 }
@@ -77,7 +77,7 @@ words.push('class');
 
 if(hour()===10)
 {
-  if(mm=0)
+  if(mm==0)
   {
     if(currentSecond != second())
 {
@@ -94,7 +94,7 @@ mm = floor(millis()-milliFreeze);
 }
 if(hour()===11 || hour()===12 || hour()===13)
 {
-  if(mm=0){
+  if(mm==0){
     if(currentSecond != second())
 {
   currentSecond=second();
@@ -141,7 +141,7 @@ if(currentSecond != second())
 }
 mm = floor(millis()-milliFreeze);
 
-  if(mm=0){
+  if(mm==0){
   words.push('class');
 }
 }
@@ -168,7 +168,7 @@ if(currentSecond != second())
   }
 }
 mm = floor(millis()-milliFreeze);
-  if(mm=0)
+  if(mm==0)
   {
   words.push('eat and shower')
 }

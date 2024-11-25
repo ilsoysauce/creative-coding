@@ -21,7 +21,7 @@ What You Should Do:
    
 */
 
-let word = "run";
+let word = "skibidi";
 let wc = 0;
 
 function setup() {
@@ -33,7 +33,7 @@ function setup() {
   let content = select("body");
   content.attribute("id","content");
   
-  content.child(createElement("h1", "WE NEED TO RUN"));
+  content.child(createElement("h1", "MIDDLE SCHOOL"));
    content.child(createElement("h3", "By Ilse Castaneda-Forkel"));
   
   // make a sentence

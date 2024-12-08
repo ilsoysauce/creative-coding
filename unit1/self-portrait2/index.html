@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequential Highlight</title>
+    <style>
+        .highlight {
+            background-color: #fff2f2;
+        }
+    </style>
+</head>
+<body>
+    <p id="text"></p>
+
+    <script>
+        const text = "notepadnotepadnoddedbarelyevenbadvisioncheThankgoodnessIwouldNOTlikeitifyouhadbeenhurtbythebutterflytransformationButbeingabutterflydoessoundlikealotoffunShedefinitelywouldtryadecenttastingbutterflypotionifitwasjusthandedtoherAslongasbutterfliesdidnotdieintheprocessOhWearehereShesaidlookingupatthestorenotrealizingthattheywerestandingthereforatleast3minutesnowUmmnoactuallyIcantseeverywellStaringatthesunstrikesagainTheyjustlooklikeblobsLetsgoclosermelancholicmelmelodicmelialsolovejustdancemepenguindancetetrisbutonlybecauseimalwaystheonethatgetspickedupmeandorangeLOOOOOOOOLjustdancetetrisyoutubepartyrockjustdanceohandiLOVEpartyrockespeciallyforthevideoihaveofmyandmysisterplayingdidisendthatherepartyrockjustdancewewereALWAYSmatchingokspeakingofthatvideoiwasgonnadoasidebysideoftheactualthingandourmovesijustforgottodothatyoutubetomp4wewouldhavedestroyedjustdancepartyrockanthemLOOOOOOOLJAJAJAJAAwholegeneratorisactuallysofunnyThankyouSabineYouneverknowwhenthepowerwillgooutinyourtentChandlerglancedatherpileofunidentifiabletentsheetsandraisedaneyebrowWhatevenokayShesighedYestheoldstoryIswearIsawhimyoucanaskeveryonewhowaswithmethatdaySheputherhandsonherhipsokwhattheheckiskekekemamamaingrightnowUhyeahIthinkweirdnoisesarecommonhereShebrusheditoffmaybeitwasjustsomeanimalsbeingweirdoutsideSlendermandidntmakethosesoundssoyknowArewegoingtobuildyourtentIdliketoseeyoutryitomgshareilovespaghettiilovedtogivemyfoodawaybecauseisecretlyhatedeverythingmymompackedcouldnotSTANDlunchablesanymoreNOOOOOOOOOOOOOOOOOOyouregonnahavetoeatitwithoutthesaucejustthespaghettifiggywouldliketotrysomespaghettitoonotusjustimprovingclappingandtwirlssometimesthewayiactuallystartingshakingtheremoteandthewaymysisterjustfreezesforasolid5secondsPRETTYSURETHEVIDEOITOOKISTHEWIIVERSIONweweremakingupmovesfrsoblikewhydidistartshakingtheremoteitookshakethatliterallythankyousmbecauseitsperfectitsgonnafitsobeautifullyinmynewdeskshelvesiactuallyhavenoideawhatthisdeskwilllooklikeafamilyfriendisapparentlybuildingitfromscratchIhaveneverownedanythingthatcanplayBluraywhyisthishereImgoingtotreasurethisforeverokslimgettingmynewdesktodayimprettysureijustfounddespicablemeforbluraybehindmydeskgotkickedoutofmyroomcuztheyremakingmydeskwelcometomynewboxeveryoneitsalittledarkrightnowmaybeiwillgetabetterimagelaterunfortunatelymyamonguslampischargingsocouldntincludeitmyboxisSETNOOOOmydeskisnolongertootallformeICANHAVEGOODPOSTURENOWiwanttodothattoothereisabigspaceforityesitssomuchbettermythingsactuallyfitiamsavedandmylittleguysarenttakingspaceonmydeskanymorenowtheyallhaveaspecialhomethisisoutofloveforyouandcasimirLOOOOOOOOLiwillliterallymakehersendittohimnocontextigotchutocasmearchandynoithinkyoulookstunningIwillfindoneforyouIRLjustsoyoucanseethevisionabsolutelyyesPleasepleasepleasepleasepleasepleasepleasepleasepleasepleasepleasegoodnightgoodnightashridgeroblox";
+        const targetLetters = ["i", "l", "s", "e"];
+        let highlightedText = "";
+        let targetIndex = 0;
+
+        for (let char of text) {
+            if (char.toLowerCase() === targetLetters[targetIndex]) {
+                highlightedText += `<span class="highlight">${char}</span>`;
+                targetIndex = (targetIndex + 1) % targetLetters.length;
+            } else {
+                highlightedText += char;
+            }
+        }
+
+        document.getElementById("text").innerHTML = highlightedText;
+    </script>
+</body>
+</html>

@@ -51,7 +51,7 @@
   }
 } 
  p {
-    text-align: justify;
+    text-align:justify;
   }
 
 
@@ -60,9 +60,10 @@
     counter-increment: countChapter;
     text-align: center;
     string-set: chapter content(text);
+    
   }
   h2::before{
-    content:"Chapter " counter(countChapter) " ";
+    content:"Chapter " counter(countChapter, upper-Roman) " ";
     display: block;
     font-size: 75%;
     font-variant:small-caps;

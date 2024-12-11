@@ -24,6 +24,7 @@ let navigation="shirts";
 
 
 function setup() {
+  
   createCanvas(800, 800);
 }
 
@@ -54,7 +55,7 @@ sad=loadImage("https://i.imgur.com/JFimtT4.png");
 
 function draw() {
   //all the default images
-  background(220);
+  background(205,196,245);
   image(stickman,0,0);
   if (navigation==="shirts")
   {

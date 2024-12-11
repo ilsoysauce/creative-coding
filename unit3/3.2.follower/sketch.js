@@ -1,5 +1,5 @@
 
-let speedfactor = 3;
+let speedfactor = 8;
 let xspeed = speedfactor;
 let yspeed = speedfactor;
 let x = 0; 
